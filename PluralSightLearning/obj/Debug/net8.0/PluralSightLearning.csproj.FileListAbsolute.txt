@@ -1,0 +1,15 @@
+C:\Users\gabri\source\repos\PluralSightLearning\PluralSightLearning\bin\Debug\net8.0\PluralSightLearning.exe
+C:\Users\gabri\source\repos\PluralSightLearning\PluralSightLearning\bin\Debug\net8.0\PluralSightLearning.deps.json
+C:\Users\gabri\source\repos\PluralSightLearning\PluralSightLearning\bin\Debug\net8.0\PluralSightLearning.runtimeconfig.json
+C:\Users\gabri\source\repos\PluralSightLearning\PluralSightLearning\bin\Debug\net8.0\PluralSightLearning.dll
+C:\Users\gabri\source\repos\PluralSightLearning\PluralSightLearning\bin\Debug\net8.0\PluralSightLearning.pdb
+C:\Users\gabri\source\repos\PluralSightLearning\PluralSightLearning\obj\Debug\net8.0\PluralSightLearning.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabri\source\repos\PluralSightLearning\PluralSightLearning\obj\Debug\net8.0\PluralSightLearning.AssemblyInfoInputs.cache
+C:\Users\gabri\source\repos\PluralSightLearning\PluralSightLearning\obj\Debug\net8.0\PluralSightLearning.AssemblyInfo.cs
+C:\Users\gabri\source\repos\PluralSightLearning\PluralSightLearning\obj\Debug\net8.0\PluralSightLearning.csproj.CoreCompileInputs.cache
+C:\Users\gabri\source\repos\PluralSightLearning\PluralSightLearning\obj\Debug\net8.0\PluralSightLearning.sourcelink.json
+C:\Users\gabri\source\repos\PluralSightLearning\PluralSightLearning\obj\Debug\net8.0\PluralSightLearning.dll
+C:\Users\gabri\source\repos\PluralSightLearning\PluralSightLearning\obj\Debug\net8.0\refint\PluralSightLearning.dll
+C:\Users\gabri\source\repos\PluralSightLearning\PluralSightLearning\obj\Debug\net8.0\PluralSightLearning.pdb
+C:\Users\gabri\source\repos\PluralSightLearning\PluralSightLearning\obj\Debug\net8.0\PluralSightLearning.genruntimeconfig.cache
+C:\Users\gabri\source\repos\PluralSightLearning\PluralSightLearning\obj\Debug\net8.0\ref\PluralSightLearning.dll
