@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PluralSightLearning; //Utilizar o Using!
+using System;
 
 namespace MyApp // Note: actual namespace depends on the project name.
 {
@@ -68,34 +69,49 @@ namespace MyApp // Note: actual namespace depends on the project name.
             //} 
             //Vendo o basico de "do while" e "for".
             //-------------------------------------------------------------------
-            Console.WriteLine("O que vamos fazer hoje: ");
-            Console.WriteLine("1. Adicionar Funcionário");
-            Console.WriteLine("2. Atualizar Funcionário");
-            Console.WriteLine("3. Deletar Funcionário");
-            Console.WriteLine("99. Sair da aplicação.");
-            string ?userAction = Console.ReadLine();
+            //Console.WriteLine("O que vamos fazer hoje: ");
+            //Console.WriteLine("1. Adicionar Funcionário");
+            //Console.WriteLine("2. Atualizar Funcionário");
+            //Console.WriteLine("3. Deletar Funcionário");
+            //Console.WriteLine("99. Sair da aplicação.");
+            //string ?userAction = Console.ReadLine();
 
-            while (userAction != "99")
-            {
-                switch (userAction) 
-                {
-                    case "1":
-                        Console.WriteLine("Adicionando Funcionário...");
-                        break;
+            //while (userAction != "99")
+            //{
+            //    switch (userAction) 
+            //    {
+            //        case "1":
+            //            Console.WriteLine("Adicionando Funcionário...");
+            //            break;
 
-                    case "2":
-                        Console.WriteLine("Atulizando Funcionário...");
-                            break;
-                    case "3":
-                        Console.WriteLine("Deletando Funcionário...");
-                        break;
-                    default:
-                        Console.WriteLine("Valor invalido.");
-                            break;
+            //        case "2":
+            //            Console.WriteLine("Atulizando Funcionário...");
+            //                break;
+            //        case "3":
+            //            Console.WriteLine("Deletando Funcionário...");
+            //            break;
+            //        default:
+            //            Console.WriteLine("Valor invalido.");
+            //                break;
 
-                }
-                userAction = Console.ReadLine();
-            }
+            //    }
+            //    userAction = Console.ReadLine();
+            //}
+            // Usando while e switch para montar um seletor de opção para seguir a aplicação.
+            //----------------------------------------------------------------------------------------------------------
+            //int amount = 1234;
+            //int months = 12;
+            //int bonus = 77;
+            //int yearlyWage = Utilities.CalculateYearWage(amount, months, bonus);
+            //Console.WriteLine($"Yearly wage: {yearlyWage}");
+            //Utilizando metodos e evocando de outro arquivo.
+            //----------------------------------------------------------------------------------------------------------
+            //Utilities.ManipulatingStrings();
+            //Utilities.UsingEscapeCharacters();
+            //Utilities.UsingStringEquality();
+            //Utilities.PartsingStrings();
+            //Aprendendo a construir metodos e utilar strings e conversões
+            //----------------------------------------------------------------------------------------------------------
         }
     }
 }
