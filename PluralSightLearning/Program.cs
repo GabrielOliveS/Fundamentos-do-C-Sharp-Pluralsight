@@ -112,6 +112,28 @@ namespace MyApp // Note: actual namespace depends on the project name.
             //Utilities.PartsingStrings();
             //Aprendendo a construir metodos e utilar strings e conversões
             //----------------------------------------------------------------------------------------------------------
+            Console.WriteLine("Criando um novo funcionario");
+            Console.WriteLine("-----------------------\n");
+
+            var gabriel = new Employee("Gabriel", "De Olivera", "gabriel.oliv.silva@hotmail.com", new DateTime(2001, 09, 19), 25.25);
+
+            gabriel.DetalhesFuncionario();
+
+            gabriel.Trabalhar(5);
+            gabriel.Trabalhar();
+
+            double receberRemuneracaoGabriel = gabriel.ReceberRemuneracao(true);
+            Console.WriteLine($"Remuneração recebida: {receberRemuneracaoGabriel}");
+
+            var miguel = new Employee("Miguel", "De Oliveira", "miguel.oliv.silva@hotmail.com", new DateTime(2006, 3, 28), 10.75);
+
+            miguel.DetalhesFuncionario();
+            miguel.Trabalhar(3);
+            miguel.Trabalhar();
+
+            var receberRemuneracaoMiguel = miguel.ReceberRemuneracao(true);
+            Console.WriteLine($"Remuneração recebida: {receberRemuneracaoMiguel}");
+
         }
     }
 }

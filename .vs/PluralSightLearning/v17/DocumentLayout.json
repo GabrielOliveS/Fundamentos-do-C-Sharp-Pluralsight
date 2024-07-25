@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\gabri\\source\\repos\\PluralSightLearning\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{146CA673-0360-4D75-9990-D0F98918B7D9}|PluralSightLearning\\PluralSightLearning.csproj|c:\\users\\gabri\\source\\repos\\pluralsightlearning\\pluralsightlearning\\utilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{146CA673-0360-4D75-9990-D0F98918B7D9}|PluralSightLearning\\PluralSightLearning.csproj|solutionrelative:pluralsightlearning\\utilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{146CA673-0360-4D75-9990-D0F98918B7D9}|PluralSightLearning\\PluralSightLearning.csproj|c:\\users\\gabri\\source\\repos\\pluralsightlearning\\pluralsightlearning\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{146CA673-0360-4D75-9990-D0F98918B7D9}|PluralSightLearning\\PluralSightLearning.csproj|solutionrelative:pluralsightlearning\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{146CA673-0360-4D75-9990-D0F98918B7D9}|PluralSightLearning\\PluralSightLearning.csproj|c:\\users\\gabri\\source\\repos\\pluralsightlearning\\pluralsightlearning\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{146CA673-0360-4D75-9990-D0F98918B7D9}|PluralSightLearning\\PluralSightLearning.csproj|solutionrelative:pluralsightlearning\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -14,21 +22,48 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Utilities.cs",
+              "DocumentMoniker": "C:\\Users\\gabri\\source\\repos\\PluralSightLearning\\PluralSightLearning\\Utilities.cs",
+              "RelativeDocumentMoniker": "PluralSightLearning\\Utilities.cs",
+              "ToolTip": "C:\\Users\\gabri\\source\\repos\\PluralSightLearning\\PluralSightLearning\\Utilities.cs",
+              "RelativeToolTip": "PluralSightLearning\\Utilities.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAIwBcAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T13:06:15.021Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\gabri\\source\\repos\\PluralSightLearning\\PluralSightLearning\\Employee.cs",
+              "RelativeDocumentMoniker": "PluralSightLearning\\Employee.cs",
+              "ToolTip": "C:\\Users\\gabri\\source\\repos\\PluralSightLearning\\PluralSightLearning\\Employee.cs",
+              "RelativeToolTip": "PluralSightLearning\\Employee.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAQwCwAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T20:29:43.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\gabri\\source\\repos\\PluralSightLearning\\PluralSightLearning\\Program.cs",
               "RelativeDocumentMoniker": "PluralSightLearning\\Program.cs",
               "ToolTip": "C:\\Users\\gabri\\source\\repos\\PluralSightLearning\\PluralSightLearning\\Program.cs",
               "RelativeToolTip": "PluralSightLearning\\Program.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAgwDIAAAAeAAAA",
+              "ViewState": "AQIAAGEAAAAAAAAAAAAgwIAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-19T22:09:05.729Z",
               "EditorCaption": ""
