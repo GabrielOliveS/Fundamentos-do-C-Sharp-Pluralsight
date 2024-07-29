@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PluralSightLearning
 {
-    internal class Utilities
+    internal class Utilidades
     {
         public static void PartsingStrings()
         {

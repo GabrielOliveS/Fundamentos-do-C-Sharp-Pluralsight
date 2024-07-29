@@ -6,9 +6,9 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PluralSightLearning
+namespace PluralSightLearning.RH
 {
-    public class Employee
+    public class Funcionario
     {
         public string primeiroNome;
         public string sobrenome;
@@ -24,11 +24,13 @@ namespace PluralSightLearning
 
         public TipoFuncionarios tipoFuncionarios;
 
+        public static double impostoTaxa = 0.15;
+
         //Construtores Employee...
-        public Employee(string primeiroNom, string sobrenom, string em, DateTime bd) : this(primeiroNom, sobrenom, em, bd, 0, TipoFuncionarios.Gerencia)
+        public Funcionario(string primeiroNom, string sobrenom, string em, DateTime bd) : this(primeiroNom, sobrenom, em, bd, 0, TipoFuncionarios.Gerencia)
         {
         }
-        public Employee(string primeiroNom, string sobrenom, string em, DateTime bd, double hora, TipoFuncionarios funcTipo) 
+        public Funcionario(string primeiroNom, string sobrenom, string em, DateTime bd, double hora, TipoFuncionarios funcTipo)
         {
             primeiroNome = primeiroNom;
             sobrenome = sobrenom;
@@ -53,26 +55,32 @@ namespace PluralSightLearning
 
         public double ReceberRemuneracao(bool resetHoras = true)
         {
-            if(tipoFuncionarios == TipoFuncionarios.Gerencia)
+            double remuneracaoAntesImposto = 0.0;
+            if (tipoFuncionarios == TipoFuncionarios.Gerencia)
             {
                 Console.WriteLine($"Um extra foi adicionado ao pagamento porque {primeiroNome} é um gerente");
-                remuneracao = horasTrabalhadas * valorPorHora * 1.25;
+                remuneracaoAntesImposto = horasTrabalhadas * valorPorHora * 1.25;
             }
-            else 
+            else
             {
-                remuneracao = horasTrabalhadas * valorPorHora; 
+                remuneracaoAntesImposto = horasTrabalhadas * valorPorHora;
             }
+            
+            double quantiaImposto = remuneracaoAntesImposto * impostoTaxa;
+
+            remuneracao = remuneracaoAntesImposto - quantiaImposto;
+            
             Console.WriteLine($"{primeiroNome} {sobrenome}  recebeu uma remuneração de {remuneracao} por {horasTrabalhadas} hora(s) de trabalho.");
 
-            if(resetHoras)
+            if (resetHoras)
                 horasTrabalhadas = 0;
 
             return remuneracao;
         }
 
-        public int CalcularBonus(int bonus) 
+        public int CalcularBonus(int bonus)
         {
-            if(horasTrabalhadas > 10)
+            if (horasTrabalhadas > 10)
                 bonus *= 2;
 
             Console.WriteLine($"O funcionário consegui um bonus de {bonus}");
@@ -95,7 +103,7 @@ namespace PluralSightLearning
 
         public void DetalhesFuncionario()
         {
-            Console.WriteLine($"\nPrimeiro nome: \t{primeiroNome}\nSobrenome: \t{sobrenome}\nEmail: \t\t{email}\nNascimento: \t{nascimento.ToShortDateString()}\n");
+            Console.WriteLine($"\nPrimeiro nome: \t{primeiroNome}\nSobrenome: \t{sobrenome}\nEmail: \t\t{email}\nNascimento: \t{nascimento.ToShortDateString()}\nTaxa imposto: \t{impostoTaxa}");
         }
         public int CalcularBonusImposto(int bonus, out int bonusImposto)
         {

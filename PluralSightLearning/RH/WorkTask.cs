@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PluralSightLearning
+namespace PluralSightLearning.RH
 {
     internal struct WorkTask
     {

@@ -1,8 +1,7 @@
-﻿using PluralSightLearning; //Utilizar o Using!
-using System;
-using System.Text;
+﻿using PluralSightLearning.Contas;
+using PluralSightLearning.RH;
 
-namespace MyApp // Note: actual namespace depends on the project name.
+namespace PluralSightLearning
 {
     internal class Program
     {
@@ -206,6 +205,28 @@ namespace MyApp // Note: actual namespace depends on the project name.
             //tarefa.descricao = "Limpando escritório"; 
             //tarefa.horas = 3;
             //tarefa.Trabalhar();
-        }   //----------------[Acima. Aprendendo a diferença das variaveis dos tipos de "referência" e "valor", Usando o construtor de Strings, trabalhando com tipos customizáveis, Criando enumerations e Structs.]------------------------------ 
+            //----------------[Acima. Aprendendo a diferença das variaveis dos tipos de "referência" e "valor", Usando o construtor de Strings, trabalhando com tipos customizáveis, Criando enumerations e Structs.]------------------------------
+            //PluralSightLearning.Contas.Cliente cliente = new PluralSightLearning.Contas.Cliente(); <--- Quando não se usa o "Using" é preciso declarar a classe com namespace completamente.
+
+            #region Usando region para falicitar a visibildiade do códgio.
+            //var miguel = new Funcionario("Miguel", "De Oliveira", "miguel.oliv.silva@hotmail.com", new DateTime(2006, 3, 28), 10.75, TipoFuncionarios.Gerencia);
+
+            //miguel.DetalhesFuncionario();
+            //miguel.Trabalhar(3);
+            //miguel.Trabalhar(11);
+            //miguel.ReceberRemuneracao();
+
+            //Funcionario.impostoTaxa = 0.02; <-- Para alterar um valor statico declarado na classe, é preciso acessar a classe diretamente.
+
+            //miguel.DetalhesFuncionario();
+            //miguel.Trabalhar(3);
+            //miguel.Trabalhar(11);
+            //miguel.ReceberRemuneracao();
+            #endregion 
+
+            //Conta conta = new Conta("123444");
+           // conta.NumeroConta = "2"; <--- Valores de Record não podem ser alterados depois de inicizalizados.
+           //---[Acima. Entendendo o funcionamento de Namespaces, classes staticas e usando a classe "record".]-----------------------------------------------------------------------------------------------------------------------------------
+        }
     }
 }
