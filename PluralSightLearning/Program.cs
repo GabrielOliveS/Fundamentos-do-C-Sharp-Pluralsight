@@ -1,5 +1,6 @@
 ﻿using PluralSightLearning; //Utilizar o Using!
 using System;
+using System.Text;
 
 namespace MyApp // Note: actual namespace depends on the project name.
 {
@@ -112,28 +113,99 @@ namespace MyApp // Note: actual namespace depends on the project name.
             //Utilities.PartsingStrings();
             //Aprendendo a construir metodos e utilar strings e conversões
             //----------------------------------------------------------------------------------------------------------
-            Console.WriteLine("Criando um novo funcionario");
-            Console.WriteLine("-----------------------\n");
+            //Console.WriteLine("Criando um novo funcionario");
+            //Console.WriteLine("-----------------------\n");
 
-            var gabriel = new Employee("Gabriel", "De Olivera", "gabriel.oliv.silva@hotmail.com", new DateTime(2001, 09, 19), 25.25);
+            //var gabriel = new Employee("Gabriel", "De Olivera", "gabriel.oliv.silva@hotmail.com", new DateTime(2001, 09, 19), 25.25);
 
-            gabriel.DetalhesFuncionario();
+            //gabriel.DetalhesFuncionario();
 
-            gabriel.Trabalhar(5);
-            gabriel.Trabalhar();
+            //gabriel.Trabalhar(5);
+            //gabriel.Trabalhar();
 
-            double receberRemuneracaoGabriel = gabriel.ReceberRemuneracao(true);
-            Console.WriteLine($"Remuneração recebida: {receberRemuneracaoGabriel}");
+            //double receberRemuneracaoGabriel = gabriel.ReceberRemuneracao(true);
+            //Console.WriteLine($"Remuneração recebida: {receberRemuneracaoGabriel}");
 
-            var miguel = new Employee("Miguel", "De Oliveira", "miguel.oliv.silva@hotmail.com", new DateTime(2006, 3, 28), 10.75);
+            //var miguel = new Employee("Miguel", "De Oliveira", "miguel.oliv.silva@hotmail.com", new DateTime(2006, 3, 28), 10.75, TipoFuncionarios.Gerencia);
 
-            miguel.DetalhesFuncionario();
-            miguel.Trabalhar(3);
-            miguel.Trabalhar();
+            //miguel.DetalhesFuncionario();
+            //miguel.Trabalhar(3);
+            //miguel.Trabalhar();
 
-            var receberRemuneracaoMiguel = miguel.ReceberRemuneracao(true);
-            Console.WriteLine($"Remuneração recebida: {receberRemuneracaoMiguel}");
+            //var receberRemuneracaoMiguel = miguel.ReceberRemuneracao(true);
+            //Console.WriteLine($"Remuneração recebida: {receberRemuneracaoMiguel}");
+            // Criando Classes e Objetos, utilizando construtores para criar objetos e em seguida manipular diversos objetos.
+            //-------------------------------------------------------------------------------------------------------------
+            //int a = 42;
+            //int aCopy = a;
+            //Console.WriteLine($"Valor do \"a\" cópia: {aCopy} Valor do \"a\": {a}");
+            //aCopy = 100;
+            //Console.WriteLine($"Valor do \"a\" cópia: {aCopy} Valor do \"a\": {a}");
+            //Employee testEmployee = miguel; --->//ambos apontando pro mesmo item, tipo de referencia, diferente o teste a cima.
+            //testEmployee.primeiroNome = "Rafael";
+            //testEmployee.DetalhesFuncionario(); 
+            //miguel.DetalhesFuncionario();
+            //----------------------------------------------------------------------------------------------------------------
+            //miguel.Trabalhar(25);
 
-        }
+            //int bonusMinimo = 100;
+            //int bonusRecebido = miguel.CalcularBonus(bonusMinimo);
+            //Console.WriteLine($"O bonus minimo é {bonusMinimo} e {miguel.primeiroNome} recebeu um bonus de {bonusRecebido}");
+
+            //int bonusMinimo = 100;
+            //int bonusImposto;  //---> Utilizando ref para altera o valor no metodo, em vez de valor que apenas faz uma cópia do método.
+            //int receberBonus = miguel.CalcularBonusImposto(bonusMinimo, out bonusImposto);
+            //Console.WriteLine($"O bonus minimo é {bonusMinimo}, o imposto é {bonusImposto} e {miguel.primeiroNome} recebeu um bonus de {receberBonus}");
+
+            //string nome = "Gabriel";
+            //string outroNome = nome; //<------ String é do tipo de refrência e imutavel.
+            //nome += " Oliveira";
+            //Console.WriteLine($"Nome: {nome} \tOutro nome: {outroNome}");
+
+            //string maiusculoNome = nome.ToUpper();
+
+            //Console.WriteLine("Nome: " + nome);
+            //Console.WriteLine("Nome Maiusculo: " + maiusculoNome);
+
+            //string indexs = string.Empty;
+
+            //for (int i = 0; i < 2500; i++) 
+            //{
+            //    indexs += i.ToString();
+            //}
+
+            //string primeiroNome = "Gabriel";
+            //string segundoNome = "Oliveira";
+
+            //StringBuilder builder = new StringBuilder();
+
+            //builder.Append("Segundo nome: ");
+            //builder.AppendLine(segundoNome);
+            //builder.Append("Primeiro nome: ");
+            //builder.AppendLine(primeiroNome);
+            //string result = builder.ToString();
+
+            //StringBuilder builder2 = new StringBuilder();
+
+            //for (int i = 0; i <= 2500; i++) 
+            //{
+            //    builder2.Append(i);
+            //    builder2.Append(" ");
+            //}
+            //string lista = builder2.ToString();
+
+            //Console.WriteLine(lista);
+            //Console.WriteLine(result);
+            // ---> Usando strings e o construtor de string do C# para manipular strings.
+
+            //string miguelJson = miguel.ConverterJson();
+            //Console.WriteLine(miguelJson); <--- Convertendo em Json usando um pacote criado por usuarios.
+            //miguel.ReceberRemuneracao();
+
+            //WorkTask tarefa; <--- criado a partir de um "struct".
+            //tarefa.descricao = "Limpando escritório"; 
+            //tarefa.horas = 3;
+            //tarefa.Trabalhar();
+        }   //----------------[Acima. Aprendendo a diferença das variaveis dos tipos de "referência" e "valor", Usando o construtor de Strings, trabalhando com tipos customizáveis, Criando enumerations e Structs.]------------------------------ 
     }
 }

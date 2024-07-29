@@ -13,3 +13,6 @@ C:\Users\gabri\source\repos\PluralSightLearning\PluralSightLearning\obj\Debug\ne
 C:\Users\gabri\source\repos\PluralSightLearning\PluralSightLearning\obj\Debug\net8.0\PluralSightLearning.pdb
 C:\Users\gabri\source\repos\PluralSightLearning\PluralSightLearning\obj\Debug\net8.0\PluralSightLearning.genruntimeconfig.cache
 C:\Users\gabri\source\repos\PluralSightLearning\PluralSightLearning\obj\Debug\net8.0\ref\PluralSightLearning.dll
+C:\Users\gabri\source\repos\PluralSightLearning\PluralSightLearning\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\gabri\source\repos\PluralSightLearning\PluralSightLearning\obj\Debug\net8.0\PluralSightLearning.csproj.AssemblyReference.cache
+C:\Users\gabri\source\repos\PluralSightLearning\PluralSightLearning\obj\Debug\net8.0\PluralSi.FEF1D639.Up2Date
