@@ -1,7 +1,4 @@
-﻿using PluralSightLearning.Contas;
-using PluralSightLearning.RH;
-
-namespace PluralSightLearning
+﻿namespace PluralSightLearning
 {
     internal class Program
     {
@@ -222,11 +219,113 @@ namespace PluralSightLearning
             //miguel.Trabalhar(3);
             //miguel.Trabalhar(11);
             //miguel.ReceberRemuneracao();
-            #endregion 
+            #endregion
 
             //Conta conta = new Conta("123444");
-           // conta.NumeroConta = "2"; <--- Valores de Record não podem ser alterados depois de inicizalizados.
-           //---[Acima. Entendendo o funcionamento de Namespaces, classes staticas e usando a classe "record".]-----------------------------------------------------------------------------------------------------------------------------------
+            // conta.NumeroConta = "2"; <--- Valores de Record não podem ser alterados depois de inicizalizados.
+            //---[Acima. Entendendo o funcionamento de Namespaces, classes staticas e usando a classe "record".]-----------------------------------------------------------------------------------------------------------------------------------
+
+            //int[] amostraArrey = new int[5];
+            //int[] amostraArrey2 = new int[] {1, 2, 3, 4, 5};
+            ////int[] amostraArrey3 = new int[6] {1, 2, 3, 4, 5};
+            //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+            // Console.WriteLine("Quantos IDs de funcionários você quer registrar?");
+
+            // int tamanho = int.Parse(Console.ReadLine());
+
+            // int[] funcionariosIds = new int[tamanho];
+
+            // var testeId = funcionariosIds[0];
+            // //var erroId = funcionariosIds[tamanho]; <--- arrays começam por 0, então o numero de elementos vai gerar comflito.
+            // for (int i = 0; i < tamanho; i++)
+            // {
+            //     Console.WriteLine("Escreva o ID do funcionário: ");
+            //     int id = int.Parse(Console.ReadLine());
+            //     funcionariosIds[i] = id; 
+            // }
+
+            // for (int i = 0; i < funcionariosIds.Length; i++)
+            //{
+            //    Console.WriteLine($"ID {i + 1}: \t{funcionariosIds[i]}");
+            //}
+
+            // Array.Sort(funcionariosIds);
+            // Console.WriteLine("Após organizar por ordem numérica: ");
+            // for (int i = 0; i < funcionariosIds.Length; i++)
+            // {
+            //     Console.WriteLine($"ID {i + 1}: \t{funcionariosIds[i]}");
+            // }
+
+            // int[] funcionarioIdCopia = new int[tamanho];
+
+            // funcionariosIds.CopyTo(funcionarioIdCopia, 0);
+
+            // Array.Reverse(funcionariosIds);
+
+            // Console.WriteLine("Após inverter arrey original: ");
+            // for (int i = 0; i < funcionariosIds.Length; i++)
+            // {
+            //     Console.WriteLine($"ID {i + 1}: \t{funcionariosIds[i]}");
+            // }
+
+            // Console.WriteLine("Arrey cópia: ");
+
+            // for (int i = 0; i < funcionarioIdCopia.Length; i++)
+            // {
+            //     Console.WriteLine($"ID {i + 1}: \t{funcionarioIdCopia[i]}");
+            // }
+            //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+            //Funcionario miguel = new Funcionario("Miguel", "De Oliveira", "miguel.oliv.silva@hotmail.com", new DateTime(2006, 3, 28), 10.75, TipoFuncionarios.Gerencia);
+            //var gabriel = new Funcionario("Gabriel", "De Oliveira", "gabriel.oliv.silva@hotmail.com", new DateTime(2001, 09, 19), 20, TipoFuncionarios.Gerencia);
+            //var rafael = new Funcionario("Rafael", "De Oliveira", "rafael.oliv.silva@hotmail.com", new DateTime(2001, 05, 02), 25, TipoFuncionarios.Gerencia);
+
+            //Funcionario[] funcionarios = new Funcionario[3];
+            //funcionarios[0] = miguel;
+            //funcionarios[1] = gabriel;
+            //funcionarios[2] = rafael;
+
+            //foreach (Funcionario e in funcionarios)
+            //{
+            //    e.DetalhesFuncionario();
+            //    var numeroDeHorasTrabalhadas = new Random().Next(25);
+            //    e.Trabalhar(numeroDeHorasTrabalhadas);
+            //    e.ReceberRemuneracao();
+            //}
+            //List<int> funcionariosId = new List<int>();
+
+            //funcionariosId.Add(new Random().Next(25));
+            //funcionariosId.Add(new Random().Next(25));
+            //funcionariosId.Add(new Random().Next(25));
+            //funcionariosId.Add(new Random().Next(25));
+
+            //funcionariosId.Add("teste"); <-- lista ja foi especificada como int.
+
+            //Console.WriteLine($"Quantia de funcionário: {funcionariosId.Count}");
+            //Console.WriteLine("Quantos funcionários você quer registra?");
+
+            //int tamanho = int.Parse(Console.ReadLine());
+
+            // for (int i = 0; i < tamanho; i++)
+            // {
+            //     Console.WriteLine($"Escreva o ID do usuário: ");
+            //    int id = int.Parse(Console.ReadLine());
+            //    funcionariosId.Add(id);
+            // }
+
+            //Funcionario miguel = new Funcionario("Miguel", "De Oliveira", "miguel.oliv.silva@hotmail.com", new DateTime(2006, 3, 28), 10.75, TipoFuncionarios.Gerencia);
+            //var gabriel = new Funcionario("Gabriel", "De Oliveira", "gabriel.oliv.silva@hotmail.com", new DateTime(2001, 09, 19), 20, TipoFuncionarios.Gerencia);
+            //var rafael = new Funcionario("Rafael", "De Oliveira", "rafael.oliv.silva@hotmail.com", new DateTime(2001, 05, 02), 25, TipoFuncionarios.Gerencia);
+
+            //List<Funcionario> funcionariosLista = new List<Funcionario>();
+            //funcionariosLista.Add(miguel);
+            //funcionariosLista.Insert(0, gabriel);
+            //funcionariosLista.Add(rafael);
+
+            //foreach ( Funcionario item in funcionariosLista)
+            //{
+            //   item.DetalhesFuncionario();
+            //}
+            //---[Acima. Entendendo e trabalhando com Arrays, entendendo listas e coleções em seguida aplicando na prática.]
         }
     }
 }
