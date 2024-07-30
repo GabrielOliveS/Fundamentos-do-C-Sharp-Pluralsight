@@ -1,43 +1,95 @@
 ﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PluralSightLearning.RH
 {
-    public class Funcionario
+    public class Funcionario: IFuncionario
     {
-        public string primeiroNome;
-        public string sobrenome;
-        public string email;
+        private string primeiroNome;
+        private string sobrenome;
+        private string email;
 
-        public int horasTrabalhadas;
-        public double remuneracao;
-        public double valorPorHora;
+        private int horasTrabalhadas;
+        private double remuneracao;
+        private double valorPorHora;
 
-        public DateTime nascimento;
-
-        const int minimoHorasTrabalhadasUnidade = 1;
-
-        public TipoFuncionarios tipoFuncionarios;
-
-        public static double impostoTaxa = 0.15;
-
-        //Construtores Employee...
-        public Funcionario(string primeiroNom, string sobrenom, string em, DateTime bd) : this(primeiroNom, sobrenom, em, bd, 0, TipoFuncionarios.Gerencia)
+        private DateTime nascimento;
+        private const int minimoHorasTrabalhadasUnidade = 1;
+        private Endereco endereco;
+        
+        private static double impostoTaxa = 0.15;
+        //---[Encapsulamento]---
+        public string PrimeiroNome
+        {
+            get { return primeiroNome; }
+            set { primeiroNome = value; }
+        }
+        public string Sobrenome
+        {
+            get { return sobrenome; }
+            set { sobrenome = value; }
+        }
+        public string Email
+        {
+            get { return email; }
+            set { email = value; }
+        }
+        public int HorasTrabalhadas
+        {
+            get { return horasTrabalhadas; } //get, permite que o valor seja consultado normalmente.
+            protected set { horasTrabalhadas = value; } //private, impede que o valor seja alterado por fora da classe.
+        }
+        public double Remuneracao
+        {
+            get { return remuneracao; }
+            private set { remuneracao = value; }
+        }
+        public double ValorPorHora
+        {
+            get { return valorPorHora; }
+            set
+            {
+                if (valorPorHora < 0) //valor precisa ser maior que zero.
+                { valorPorHora = 0; }
+                else
+                { valorPorHora = value; }
+            }
+        }
+        public DateTime Nascimento
+        {
+            get { return nascimento; }
+            set { nascimento = value; }
+        }
+        public static double ImpostoTaxa
+        {
+            get { return impostoTaxa; }
+            set { impostoTaxa = value; }
+        }
+        public Endereco Endereco
+        {
+            get { return endereco; }
+            set { endereco = value; }
+        }
+        //Construtores Funcionario...
+        public Funcionario(string primeiroNome, string sobrenome, string email, DateTime dataNascimento) : this(primeiroNome, sobrenome, email, dataNascimento, 0)
         {
         }
-        public Funcionario(string primeiroNom, string sobrenom, string em, DateTime bd, double hora, TipoFuncionarios funcTipo)
+        public Funcionario(string primeiroNome, string sobrenome, string email, DateTime dataNascimento, double valorPorHora)
         {
-            primeiroNome = primeiroNom;
-            sobrenome = sobrenom;
-            email = em;
-            nascimento = bd;
-            valorPorHora = hora;
-            tipoFuncionarios = funcTipo;
+            PrimeiroNome = primeiroNome;
+            Sobrenome = sobrenome;
+            Email = email;
+            Nascimento = dataNascimento;
+            ValorPorHora = valorPorHora;
+        }
+        public Funcionario(string primeiroNome, string sobrenome, string email, DateTime dataNascimento, double valorPorHora, string rua, string numeroCasa, string cep, string cidade)
+        {
+            PrimeiroNome = primeiroNome;
+            Sobrenome = sobrenome;
+            Email = email;
+            Nascimento = dataNascimento;
+            ValorPorHora = valorPorHora;
+
+            Endereco = new Endereco(rua, numeroCasa, cep, cidade);
         }
 
         public void Trabalhar()
@@ -49,38 +101,26 @@ namespace PluralSightLearning.RH
 
         public void Trabalhar(int horas)
         {
-            horasTrabalhadas += horas;
-            Console.WriteLine($"{primeiroNome} {sobrenome} trabalhou por {horas} hora(s)!");
+            HorasTrabalhadas += horas;
+            Console.WriteLine($"{PrimeiroNome} {Sobrenome} trabalhou por {horas} hora(s)!");
         }
 
         public double ReceberRemuneracao(bool resetHoras = true)
         {
-            double remuneracaoAntesImposto = 0.0;
-            if (tipoFuncionarios == TipoFuncionarios.Gerencia)
-            {
-                Console.WriteLine($"Um extra foi adicionado ao pagamento porque {primeiroNome} é um gerente");
-                remuneracaoAntesImposto = horasTrabalhadas * valorPorHora * 1.25;
-            }
-            else
-            {
-                remuneracaoAntesImposto = horasTrabalhadas * valorPorHora;
-            }
-            
-            double quantiaImposto = remuneracaoAntesImposto * impostoTaxa;
+            double remuneracaoAntesImposto = HorasTrabalhadas * ValorPorHora;
+            double impostoQuantia = remuneracaoAntesImposto * ImpostoTaxa;
 
-            remuneracao = remuneracaoAntesImposto - quantiaImposto;
-            
-            Console.WriteLine($"{primeiroNome} {sobrenome}  recebeu uma remuneração de {remuneracao} por {horasTrabalhadas} hora(s) de trabalho.");
+            Remuneracao = remuneracaoAntesImposto - impostoQuantia;
 
+            Console.WriteLine($"{PrimeiroNome} {Sobrenome} recebeu uma remuneração de {Remuneracao} por {HorasTrabalhadas} hora(s) de trabalho.");
             if (resetHoras)
-                horasTrabalhadas = 0;
-
-            return remuneracao;
+                HorasTrabalhadas = 0;
+            return Remuneracao;
         }
 
         public int CalcularBonus(int bonus)
         {
-            if (horasTrabalhadas > 10)
+            if (HorasTrabalhadas > 10)
                 bonus *= 2;
 
             Console.WriteLine($"O funcionário consegui um bonus de {bonus}");
@@ -101,14 +141,14 @@ namespace PluralSightLearning.RH
         //    return bonus;
         //}
 
-        public void DetalhesFuncionario()
+        public virtual void DetalhesFuncionario()
         {
-            Console.WriteLine($"\nPrimeiro nome: \t{primeiroNome}\nSobrenome: \t{sobrenome}\nEmail: \t\t{email}\nNascimento: \t{nascimento.ToShortDateString()}\nTaxa imposto: \t{impostoTaxa}");
+            Console.WriteLine($"\nPrimeiro nome: \t{PrimeiroNome}\nSobrenome: \t{Sobrenome}\nEmail: \t\t{Email}\nNascimento: \t{Nascimento.ToShortDateString()}\nTaxa imposto: \t{ImpostoTaxa}");
         }
         public int CalcularBonusImposto(int bonus, out int bonusImposto)
         {
             bonusImposto = 0;
-            if (horasTrabalhadas > 10)
+            if (HorasTrabalhadas > 10)
                 bonus *= 2;
             if (bonus >= 200)
             {
@@ -119,12 +159,16 @@ namespace PluralSightLearning.RH
             Console.WriteLine($"O funcionário consegui um bonus de {bonus} e o imposto do bonus é {bonusImposto}");
             return bonus;
         }
+        public virtual void DarBonus()
+        {
+            Console.WriteLine($"{PrimeiroNome} {Sobrenome} recebeu um bonus comum de 100!");
+        }
         //public static void UsandoTipoCustom()
         //{
         //    List<string> list = new List<string>();
         //}
 
-        public string ConverterJson() //Método para converte em Json.
+        public string ConverterJson() //Método para converte em Json. 
         {
             string json = JsonConvert.SerializeObject(this);
             return json;

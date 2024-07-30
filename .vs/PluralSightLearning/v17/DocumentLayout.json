@@ -7,8 +7,28 @@
       "RelativeMoniker": "D:0:0:{146CA673-0360-4D75-9990-D0F98918B7D9}|PluralSightLearning\\PluralSightLearning.csproj|solutionrelative:pluralsightlearning\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{146CA673-0360-4D75-9990-D0F98918B7D9}|PluralSightLearning\\PluralSightLearning.csproj|c:\\users\\gabri\\source\\repos\\pluralsightlearning\\pluralsightlearning\\rh\\gerente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{146CA673-0360-4D75-9990-D0F98918B7D9}|PluralSightLearning\\PluralSightLearning.csproj|solutionrelative:pluralsightlearning\\rh\\gerente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{146CA673-0360-4D75-9990-D0F98918B7D9}|PluralSightLearning\\PluralSightLearning.csproj|c:\\users\\gabri\\source\\repos\\pluralsightlearning\\pluralsightlearning\\rh\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{146CA673-0360-4D75-9990-D0F98918B7D9}|PluralSightLearning\\PluralSightLearning.csproj|solutionrelative:pluralsightlearning\\rh\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{146CA673-0360-4D75-9990-D0F98918B7D9}|PluralSightLearning\\PluralSightLearning.csproj|c:\\users\\gabri\\source\\repos\\pluralsightlearning\\pluralsightlearning\\rh\\desenvolvedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{146CA673-0360-4D75-9990-D0F98918B7D9}|PluralSightLearning\\PluralSightLearning.csproj|solutionrelative:pluralsightlearning\\rh\\desenvolvedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{146CA673-0360-4D75-9990-D0F98918B7D9}|PluralSightLearning\\PluralSightLearning.csproj|c:\\users\\gabri\\source\\repos\\pluralsightlearning\\pluralsightlearning\\rh\\endereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{146CA673-0360-4D75-9990-D0F98918B7D9}|PluralSightLearning\\PluralSightLearning.csproj|solutionrelative:pluralsightlearning\\rh\\endereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{146CA673-0360-4D75-9990-D0F98918B7D9}|PluralSightLearning\\PluralSightLearning.csproj|c:\\users\\gabri\\source\\repos\\pluralsightlearning\\pluralsightlearning\\rh\\worktask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{146CA673-0360-4D75-9990-D0F98918B7D9}|PluralSightLearning\\PluralSightLearning.csproj|solutionrelative:pluralsightlearning\\rh\\worktask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{146CA673-0360-4D75-9990-D0F98918B7D9}|PluralSightLearning\\PluralSightLearning.csproj|c:\\users\\gabri\\source\\repos\\pluralsightlearning\\pluralsightlearning\\utilidades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{146CA673-0360-4D75-9990-D0F98918B7D9}|PluralSightLearning\\PluralSightLearning.csproj|solutionrelative:pluralsightlearning\\utilidades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{146CA673-0360-4D75-9990-D0F98918B7D9}|PluralSightLearning\\PluralSightLearning.csproj|c:\\users\\gabri\\source\\repos\\pluralsightlearning\\pluralsightlearning\\contas\\conta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,18 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{146CA673-0360-4D75-9990-D0F98918B7D9}|PluralSightLearning\\PluralSightLearning.csproj|c:\\users\\gabri\\source\\repos\\pluralsightlearning\\pluralsightlearning\\contas\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{146CA673-0360-4D75-9990-D0F98918B7D9}|PluralSightLearning\\PluralSightLearning.csproj|solutionrelative:pluralsightlearning\\contas\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{146CA673-0360-4D75-9990-D0F98918B7D9}|PluralSightLearning\\PluralSightLearning.csproj|c:\\users\\gabri\\source\\repos\\pluralsightlearning\\pluralsightlearning\\rh\\worktask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{146CA673-0360-4D75-9990-D0F98918B7D9}|PluralSightLearning\\PluralSightLearning.csproj|solutionrelative:pluralsightlearning\\rh\\worktask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{146CA673-0360-4D75-9990-D0F98918B7D9}|PluralSightLearning\\PluralSightLearning.csproj|c:\\users\\gabri\\source\\repos\\pluralsightlearning\\pluralsightlearning\\rh\\tipofuncionarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{146CA673-0360-4D75-9990-D0F98918B7D9}|PluralSightLearning\\PluralSightLearning.csproj|solutionrelative:pluralsightlearning\\rh\\tipofuncionarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{146CA673-0360-4D75-9990-D0F98918B7D9}|PluralSightLearning\\PluralSightLearning.csproj|c:\\users\\gabri\\source\\repos\\pluralsightlearning\\pluralsightlearning\\utilidades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{146CA673-0360-4D75-9990-D0F98918B7D9}|PluralSightLearning\\PluralSightLearning.csproj|solutionrelative:pluralsightlearning\\utilidades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,15 +54,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Funcionario.cs",
               "DocumentMoniker": "C:\\Users\\gabri\\source\\repos\\PluralSightLearning\\PluralSightLearning\\RH\\Funcionario.cs",
               "RelativeDocumentMoniker": "PluralSightLearning\\RH\\Funcionario.cs",
               "ToolTip": "C:\\Users\\gabri\\source\\repos\\PluralSightLearning\\PluralSightLearning\\RH\\Funcionario.cs",
               "RelativeToolTip": "PluralSightLearning\\RH\\Funcionario.cs",
-              "ViewState": "AQIAAFQAAAAAAAAAAAAmwGkAAAChAAAA",
+              "ViewState": "AQIAAIYAAAAAAAAAAAAAAKQAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-25T20:29:43.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Gerente.cs",
+              "DocumentMoniker": "C:\\Users\\gabri\\source\\repos\\PluralSightLearning\\PluralSightLearning\\RH\\Gerente.cs",
+              "RelativeDocumentMoniker": "PluralSightLearning\\RH\\Gerente.cs",
+              "ToolTip": "C:\\Users\\gabri\\source\\repos\\PluralSightLearning\\PluralSightLearning\\RH\\Gerente.cs",
+              "RelativeToolTip": "PluralSightLearning\\RH\\Gerente.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T18:29:03.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Desenvolvedor.cs",
+              "DocumentMoniker": "C:\\Users\\gabri\\source\\repos\\PluralSightLearning\\PluralSightLearning\\RH\\Desenvolvedor.cs",
+              "RelativeDocumentMoniker": "PluralSightLearning\\RH\\Desenvolvedor.cs",
+              "ToolTip": "C:\\Users\\gabri\\source\\repos\\PluralSightLearning\\PluralSightLearning\\RH\\Desenvolvedor.cs",
+              "RelativeToolTip": "PluralSightLearning\\RH\\Desenvolvedor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAwBUAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T19:01:33.17Z",
               "EditorCaption": ""
             },
             {
@@ -65,7 +99,7 @@
               "RelativeDocumentMoniker": "PluralSightLearning\\Program.cs",
               "ToolTip": "C:\\Users\\gabri\\source\\repos\\PluralSightLearning\\PluralSightLearning\\Program.cs",
               "RelativeToolTip": "PluralSightLearning\\Program.cs",
-              "ViewState": "AQIAAC4BAAAAAAAAAAAswEcBAAB7AAAA",
+              "ViewState": "AQIAADkBAAAAAAAAAADwv1kBAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-19T22:09:05.729Z",
               "EditorCaption": ""
@@ -73,6 +107,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "Endereco.cs",
+              "DocumentMoniker": "C:\\Users\\gabri\\source\\repos\\PluralSightLearning\\PluralSightLearning\\RH\\Endereco.cs",
+              "RelativeDocumentMoniker": "PluralSightLearning\\RH\\Endereco.cs",
+              "ToolTip": "C:\\Users\\gabri\\source\\repos\\PluralSightLearning\\PluralSightLearning\\RH\\Endereco.cs",
+              "RelativeToolTip": "PluralSightLearning\\RH\\Endereco.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAgAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T19:21:16.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "WorkTask.cs",
               "DocumentMoniker": "C:\\Users\\gabri\\source\\repos\\PluralSightLearning\\PluralSightLearning\\RH\\WorkTask.cs",
               "RelativeDocumentMoniker": "PluralSightLearning\\RH\\WorkTask.cs",
@@ -81,45 +128,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-26T21:47:09.173Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Cliente.cs",
-              "DocumentMoniker": "C:\\Users\\gabri\\source\\repos\\PluralSightLearning\\PluralSightLearning\\Contas\\Cliente.cs",
-              "RelativeDocumentMoniker": "PluralSightLearning\\Contas\\Cliente.cs",
-              "ToolTip": "C:\\Users\\gabri\\source\\repos\\PluralSightLearning\\PluralSightLearning\\Contas\\Cliente.cs",
-              "RelativeToolTip": "PluralSightLearning\\Contas\\Cliente.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T17:29:17.825Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Conta.cs",
-              "DocumentMoniker": "C:\\Users\\gabri\\source\\repos\\PluralSightLearning\\PluralSightLearning\\Contas\\Conta.cs",
-              "RelativeDocumentMoniker": "PluralSightLearning\\Contas\\Conta.cs",
-              "ToolTip": "C:\\Users\\gabri\\source\\repos\\PluralSightLearning\\PluralSightLearning\\Contas\\Conta.cs",
-              "RelativeToolTip": "PluralSightLearning\\Contas\\Conta.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T17:27:14.149Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TipoFuncionarios.cs",
-              "DocumentMoniker": "C:\\Users\\gabri\\source\\repos\\PluralSightLearning\\PluralSightLearning\\RH\\TipoFuncionarios.cs",
-              "RelativeDocumentMoniker": "PluralSightLearning\\RH\\TipoFuncionarios.cs",
-              "ToolTip": "C:\\Users\\gabri\\source\\repos\\PluralSightLearning\\PluralSightLearning\\RH\\TipoFuncionarios.cs",
-              "RelativeToolTip": "PluralSightLearning\\RH\\TipoFuncionarios.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T21:33:18.303Z",
               "EditorCaption": ""
             },
             {
@@ -134,6 +142,30 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-29T17:08:31.108Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\gabri\\source\\repos\\PluralSightLearning\\PluralSightLearning\\Contas\\Cliente.cs",
+              "RelativeDocumentMoniker": "PluralSightLearning\\Contas\\Cliente.cs",
+              "ToolTip": "C:\\Users\\gabri\\source\\repos\\PluralSightLearning\\PluralSightLearning\\Contas\\Cliente.cs",
+              "RelativeToolTip": "PluralSightLearning\\Contas\\Cliente.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T17:29:17.825Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Conta.cs",
+              "DocumentMoniker": "C:\\Users\\gabri\\source\\repos\\PluralSightLearning\\PluralSightLearning\\Contas\\Conta.cs",
+              "RelativeDocumentMoniker": "PluralSightLearning\\Contas\\Conta.cs",
+              "ToolTip": "C:\\Users\\gabri\\source\\repos\\PluralSightLearning\\PluralSightLearning\\Contas\\Conta.cs",
+              "RelativeToolTip": "PluralSightLearning\\Contas\\Conta.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T17:27:14.149Z"
             }
           ]
         }

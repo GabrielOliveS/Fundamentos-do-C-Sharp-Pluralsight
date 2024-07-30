@@ -1,4 +1,6 @@
-﻿namespace PluralSightLearning
+﻿using PluralSightLearning.RH;
+
+namespace PluralSightLearning
 {
     internal class Program
     {
@@ -313,7 +315,7 @@
             // }
 
             //Funcionario miguel = new Funcionario("Miguel", "De Oliveira", "miguel.oliv.silva@hotmail.com", new DateTime(2006, 3, 28), 10.75, TipoFuncionarios.Gerencia);
-            //var gabriel = new Funcionario("Gabriel", "De Oliveira", "gabriel.oliv.silva@hotmail.com", new DateTime(2001, 09, 19), 20, TipoFuncionarios.Gerencia);
+            //var gabriel = new Gerente("Gabriel", "De Oliveira", "gabriel.oliv.silva@hotmail.com", new DateTime(2001, 09, 19), 20);
             //var rafael = new Funcionario("Rafael", "De Oliveira", "rafael.oliv.silva@hotmail.com", new DateTime(2001, 05, 02), 25, TipoFuncionarios.Gerencia);
 
             //List<Funcionario> funcionariosLista = new List<Funcionario>();
@@ -326,6 +328,23 @@
             //   item.DetalhesFuncionario();
             //}
             //---[Acima. Entendendo e trabalhando com Arrays, entendendo listas e coleções em seguida aplicando na prática.]
+            //var gabriel = new Gerente("Gabriel", "De Oliveira", "gabriel.oliv.silva@hotmail.com", new DateTime(2001, 09, 19), 30);
+            //gabriel.DetalhesFuncionario();
+            //gabriel.Trabalhar(27);
+            //gabriel.ReceberRemuneracao();
+            //gabriel.ParticiparReuniaoGerente();
+            //gabriel.Trabalhar(8);
+            //gabriel.ReceberRemuneracao();
+            //gabriel.ParticiparReuniaoGerente(2);
+            //gabriel.Trabalhar();
+            //gabriel.ReceberRemuneracao();
+            //var miguel = new Desenvolvedor("Miguel", "De Oliveira", "miguel.oliv.silva@hotmail.com", new DateTime(2006, 3, 28), 10.75, "Aprediz");
+            //miguel.DetalhesFuncionario();
+
+            //IFuncionario junior = new Funcionario("Junior", "Da Silva", "junior@gmail.com", new DateTime(2006, 3, 28), 20.15, "Rua tupi", "260", "09848-380", "São Paulo");
+            //string nomeRua = junior.Endereco.Rua;
+            //Console.WriteLine(nomeRua);
+            //---[Acima. Entendendo os princípios da linguagem orientada a objetos, Encapsulando variáveis, trabalhando com heranças, polimorfismo e interfaces.]---
         }
     }
 }
