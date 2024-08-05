@@ -19,6 +19,9 @@ namespace PluralSightLearning.RH
         {
             ProjetoAtual = projeto;
         }
+        public Desenvolvedor(string primeiroNome, string sobrenome, string email, DateTime dataNascimento, double valorPorHora) : base(primeiroNome, sobrenome, email, dataNascimento, valorPorHora)
+        {
+        }
         public override void DetalhesFuncionario()
         {
             Console.WriteLine($"\nProjeto atual: \t{ProjetoAtual}\nPrimeiro nome: \t{PrimeiroNome}\nSobrenome: \t{Sobrenome}\nEmail: \t\t{Email}\nNascimento: \t{Nascimento.ToShortDateString()}\nTaxa imposto: \t{ImpostoTaxa}");

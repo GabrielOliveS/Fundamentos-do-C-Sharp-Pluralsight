@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PluralSightLearning.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c54d8af673a9ba2f3c8aec805e923753654f6d8c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+112e9eb59cd45f3647a4fa2db9961e5231caab18")]
 [assembly: System.Reflection.AssemblyProductAttribute("PluralSightLearning.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PluralSightLearning.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

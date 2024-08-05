@@ -345,6 +345,59 @@ namespace PluralSightLearning
             //string nomeRua = junior.Endereco.Rua;
             //Console.WriteLine(nomeRua);
             //---[Acima. Entendendo os princípios da linguagem orientada a objetos, Encapsulando variáveis, trabalhando com heranças, polimorfismo e interfaces.]---
+            List<Funcionario> funcionarios = new List<Funcionario>();
+
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
+            Console.WriteLine("*****************************");
+            Console.WriteLine("* Aprendizagem PluralSight! *");
+            Console.WriteLine("*****************************");
+            Console.ForegroundColor= ConsoleColor.White;
+
+            string opcaoUsuario;
+            Utilidades.VerificarPorArquivoFuncionariosExistente();
+
+            do
+            {
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine($"Carreagado {funcionarios.Count} Funcionário(s)\n\n");
+                Console.ResetColor();
+
+                Console.WriteLine("***********************");
+                Console.WriteLine("* Selecione uma opção *");
+                Console.WriteLine("***********************");
+                Console.WriteLine("1: Registrar um funcionário");
+                Console.WriteLine("2: Mostrar todos funcionários");
+                Console.WriteLine("3: Salvar dados");
+                Console.WriteLine("4: Carregar dados");
+                Console.WriteLine("0: Sair da aplicação");
+
+                opcaoUsuario = Console.ReadLine();
+
+                switch (opcaoUsuario)
+                {
+                    case "1" or "registrar":
+                        Utilidades.RegistrarFuncionario(funcionarios);
+                        break;
+                    case "2" or "mostrar":
+                        Utilidades.MostarTodosFuncionarios(funcionarios);
+                        break;
+                    case "3" or "salvar":
+                        Utilidades.SalvarFuncionarios(funcionarios);
+                        break;
+                    case "4" or "carregar":
+                        Utilidades.CarregarFuncionarios(funcionarios);
+                        break;
+                    case "0" or null: break;
+
+                    default:
+                        Console.WriteLine("Opção inválida! Por favor, tente novamente.");
+                        break;
+
+                }
+            }
+            while (opcaoUsuario != "0");
+            Console.WriteLine("Obrigado por usar nossa aplicação em teste!");
+            //Programa totalmente funcional.
         }
     }
 }
