@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluralSightLearning", "PluralSightLearning\PluralSightLearning.csproj", "{146CA673-0360-4D75-9990-D0F98918B7D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PluralSightLearning", "PluralSightLearning\PluralSightLearning.csproj", "{146CA673-0360-4D75-9990-D0F98918B7D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluralSightLearning.Tests", "PluralSightLearning.Tests\PluralSightLearning.Tests.csproj", "{D3CB633B-0009-44E8-86DB-1A0B75403968}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{146CA673-0360-4D75-9990-D0F98918B7D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{146CA673-0360-4D75-9990-D0F98918B7D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{146CA673-0360-4D75-9990-D0F98918B7D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3CB633B-0009-44E8-86DB-1A0B75403968}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3CB633B-0009-44E8-86DB-1A0B75403968}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3CB633B-0009-44E8-86DB-1A0B75403968}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3CB633B-0009-44E8-86DB-1A0B75403968}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
