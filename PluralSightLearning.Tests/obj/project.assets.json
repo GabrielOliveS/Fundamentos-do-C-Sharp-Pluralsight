@@ -965,19 +965,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gabri\\.nuget\\packages\\": {}
+    "C:\\Users\\santi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gabri\\source\\repos\\PluralSightLearning\\PluralSightLearning.Tests\\PluralSightLearning.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\santi\\Source\\Repos\\Aprendizagem-PluralSight\\PluralSightLearning.Tests\\PluralSightLearning.Tests.csproj",
       "projectName": "PluralSightLearning.Tests",
-      "projectPath": "C:\\Users\\gabri\\source\\repos\\PluralSightLearning\\PluralSightLearning.Tests\\PluralSightLearning.Tests.csproj",
-      "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gabri\\source\\repos\\PluralSightLearning\\PluralSightLearning.Tests\\obj\\",
+      "projectPath": "C:\\Users\\santi\\Source\\Repos\\Aprendizagem-PluralSight\\PluralSightLearning.Tests\\PluralSightLearning.Tests.csproj",
+      "packagesPath": "C:\\Users\\santi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\santi\\Source\\Repos\\Aprendizagem-PluralSight\\PluralSightLearning.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\santi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -992,8 +992,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\gabri\\source\\repos\\PluralSightLearning\\PluralSightLearning\\PluralSightLearning.csproj": {
-              "projectPath": "C:\\Users\\gabri\\source\\repos\\PluralSightLearning\\PluralSightLearning\\PluralSightLearning.csproj"
+            "C:\\Users\\santi\\Source\\Repos\\Aprendizagem-PluralSight\\PluralSightLearning\\PluralSightLearning.csproj": {
+              "projectPath": "C:\\Users\\santi\\Source\\Repos\\Aprendizagem-PluralSight\\PluralSightLearning\\PluralSightLearning.csproj"
             }
           }
         }
@@ -1050,7 +1050,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

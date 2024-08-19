@@ -368,7 +368,8 @@ namespace PluralSightLearning
                 Console.WriteLine("1: Registrar um funcionário");
                 Console.WriteLine("2: Mostrar todos funcionários");
                 Console.WriteLine("3: Salvar dados");
-                Console.WriteLine("4: Carregar dados");
+                Console.WriteLine("4: Carregar funcionário especifico");
+                Console.WriteLine("5: Carregar dados");
                 Console.WriteLine("0: Sair da aplicação");
 
                 opcaoUsuario = Console.ReadLine();
@@ -384,7 +385,10 @@ namespace PluralSightLearning
                     case "3" or "salvar":
                         Utilidades.SalvarFuncionarios(funcionarios);
                         break;
-                    case "4" or "carregar":
+                    case "4":
+                        Utilidades.CarregarFuncionadoPorId(funcionarios);
+                        break;
+                    case "5" or "carregar":
                         Utilidades.CarregarFuncionarios(funcionarios);
                         break;
                     case "0" or null: break;

@@ -1,9 +1,5 @@
 ﻿using PluralSightLearning.RH;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace PluralSightLearning
 {
@@ -15,10 +11,10 @@ namespace PluralSightLearning
         public static void PartsingStrings()
         {
             Console.WriteLine("Coloque o valor: ");
-            string ?valor = Console.ReadLine();
+            string? valor = Console.ReadLine();
 
             //int valorInt = int.Parse(valor);
-                if (int.TryParse(valor, out int valorInt))
+            if (int.TryParse(valor, out int valorInt))
                 Console.WriteLine("Conversão concluida: " + valorInt);
             else
                 Console.WriteLine("Conversão imposivel");
@@ -29,7 +25,7 @@ namespace PluralSightLearning
 
         }
 
-        public static void UsingStringEquality() 
+        public static void UsingStringEquality()
         {
             string name1 = "Miguel";
             string name2 = "miguel";
@@ -92,8 +88,8 @@ namespace PluralSightLearning
 
             return monthlyWage * numberOfMonthsWorked;
         }
-        public static int CalculateYearWage(int monthlyWage, int numberOfMonthsWorked, int bonus = 0) 
-        { 
+        public static int CalculateYearWage(int monthlyWage, int numberOfMonthsWorked, int bonus = 0)
+        {
             return monthlyWage * numberOfMonthsWorked + bonus;
         }
         public static double CalculateYearWage(double monthlyWage, double numberOfMonthsWorked, double bonus)
@@ -106,7 +102,7 @@ namespace PluralSightLearning
         {
             string caminho = $"{diretorio}{nomeArquivo}";
             bool arquivoEcontrado = File.Exists(caminho);
-            if (arquivoEcontrado) 
+            if (arquivoEcontrado)
             {
                 Console.WriteLine("Um arquivo de funcionários do sistema foi encontrado.");
             }
@@ -153,14 +149,14 @@ namespace PluralSightLearning
 
             Funcionario funcionario = null;
 
-            switch (tipoFuncionario) 
+            switch (tipoFuncionario)
             {
                 case "1":
                     funcionario = new Funcionario(primeiroNome, sobrenome, email, nascimento, remuneracaoDouble);
                     break;
 
                 case "2":
-                    funcionario = new Gerente(primeiroNome, sobrenome, email , nascimento,remuneracaoDouble);
+                    funcionario = new Gerente(primeiroNome, sobrenome, email, nascimento, remuneracaoDouble);
                     break;
                 case "3":
                     funcionario = new Desenvolvedor(primeiroNome, sobrenome, email, nascimento, remuneracaoDouble);
@@ -207,48 +203,102 @@ namespace PluralSightLearning
             else if (funcionario is Funcionario)
                 return "1";
             return "0";
-            
+
         }
 
         internal static void CarregarFuncionarios(List<Funcionario> funcionarios)
         {
             string caminho = $"{diretorio}{nomeArquivo}";
-            if (File.Exists(caminho))
+            try
             {
-                funcionarios.Clear(); //Apaga todos items da lista, provavelmente vazia.
-
-                string[] funcionarioString = File.ReadAllLines(caminho);
-                for (int i = 0; i < funcionarioString.Length; i++)
+                if (File.Exists(caminho))
                 {
-                    string[] funcionarioSplit = funcionarioString[i].Split(';');
-                    string primeiroNome = funcionarioSplit[0].Substring(funcionarioSplit[0].IndexOf(':') + 1);
-                    string lastName = funcionarioSplit[1].Substring(funcionarioSplit[1].IndexOf(':') + 1);
-                    string email = funcionarioSplit[2].Substring(funcionarioSplit[2].IndexOf(':') + 1);
-                    DateTime nascimento = DateTime.Parse(funcionarioSplit[3].Substring(funcionarioSplit[3].IndexOf(':') + 1));
-                    double valorHora = double.Parse(funcionarioSplit[4].Substring(funcionarioSplit[4].IndexOf(':') + 1));
-                    string tipoFuncionario = funcionarioSplit[5].Substring(funcionarioSplit[5].IndexOf(':') + 1);
+                    funcionarios.Clear(); //Apaga todos items da lista, provavelmente vazia.
 
-                    Funcionario funcionario = null;
-
-                    switch (tipoFuncionario)
+                    string[] funcionarioString = File.ReadAllLines(caminho);
+                    for (int i = 0; i < funcionarioString.Length; i++)
                     {
-                        case "1":
-                            funcionario = new Funcionario(primeiroNome, lastName, email, nascimento, valorHora);
-                            break;
-                        case "2":
-                            funcionario = new Gerente(primeiroNome, lastName, email, nascimento, valorHora);
-                            break;
-                        case "3":
-                            funcionario = new Desenvolvedor(primeiroNome, lastName, email, nascimento, valorHora);
-                            break;
+                        string[] funcionarioSplit = funcionarioString[i].Split(';');
+                        string primeiroNome = funcionarioSplit[0].Substring(funcionarioSplit[0].IndexOf(':') + 1);
+                        string lastName = funcionarioSplit[1].Substring(funcionarioSplit[1].IndexOf(':') + 1);
+                        string email = funcionarioSplit[2].Substring(funcionarioSplit[2].IndexOf(':') + 1);
+                        DateTime nascimento = DateTime.Parse(funcionarioSplit[3].Substring(funcionarioSplit[3].IndexOf(':') + 1));
+                        double valorHora = double.Parse(funcionarioSplit[4].Substring(funcionarioSplit[4].IndexOf(':') + 1));
+                        string tipoFuncionario = funcionarioSplit[5].Substring(funcionarioSplit[5].IndexOf(':') + 1);
+
+                        Funcionario funcionario = null;
+
+                        switch (tipoFuncionario)
+                        {
+                            case "1":
+                                funcionario = new Funcionario(primeiroNome, lastName, email, nascimento, valorHora);
+                                break;
+                            case "2":
+                                funcionario = new Gerente(primeiroNome, lastName, email, nascimento, valorHora);
+                                break;
+                            case "3":
+                                funcionario = new Desenvolvedor(primeiroNome, lastName, email, nascimento, valorHora);
+                                break;
+                        }
+
+
+                        funcionarios.Add(funcionario);
+
                     }
-
-
-                    funcionarios.Add(funcionario);
-
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine($"Foi carregado um total de {funcionarios.Count} Funcionários!\n\n");
+                    //Console.ResetColor();
                 }
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine($"Foi carregado um total de {funcionarios.Count} Funcionários!\n\n");
+            }
+            catch (FileNotFoundException fnfex)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("O arquivo não foi encontrado!");
+                Console.WriteLine(fnfex.Message);
+                Console.WriteLine(fnfex.StackTrace);
+                //Console.ResetColor();
+            }
+            catch (IndexOutOfRangeException iex)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Algo deu errado durante a leitura do arquivos, verique a integridade do arquivo.\n\n");
+                Console.WriteLine(iex.Message);
+                //Console.ResetColor();
+            }
+            catch (Exception ex)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Algo deu errado, verifique a origem do erro.");
+                Console.WriteLine(ex.Message);
+                Console.WriteLine(ex.StackTrace);
+                //Console.ResetColor();
+            }
+            finally 
+            {
+                Console.ResetColor();
+            }
+        }
+
+        internal static void CarregarFuncionadoPorId(List<Funcionario> funcionarios)
+        {
+            try
+            {
+                Console.WriteLine("Escreva o ID do funcionário que quer vizualizar :");
+
+                int idSelecionado = int.Parse(Console.ReadLine()) -1;
+                Funcionario funcionarioSelecionado = funcionarios[idSelecionado];
+                funcionarioSelecionado.DetalhesFuncionario();
+            }
+            catch (FormatException)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Insira um valor de ID correto!\n\n");
+                Console.ResetColor();
+            }
+            catch (ArgumentOutOfRangeException) 
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("ID não encontrado ou inexistente, verifique se existem funcionários carregados!\n\n");
                 Console.ResetColor();
             }
         }
